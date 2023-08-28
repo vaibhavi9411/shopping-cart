@@ -100,6 +100,9 @@
 
 /* MOBILE CSS */
 @media only screen and (max-width: 600px) {
+    .my-order-list{
+        bottom: 12%;
+    }
     .product-header {
         padding: 10px;
     }

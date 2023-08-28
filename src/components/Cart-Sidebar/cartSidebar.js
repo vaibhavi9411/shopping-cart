@@ -67,7 +67,7 @@ export function AddToCart({ selectedProductList, sidebarState, setSidebarState, 
                 <h2>My Order</h2>
                 <span>Take out</span>
                 </div>
-                <div className='cart-close-icon'><BsXLg onClick={closeSidebar}/></div>
+                <div className='cart-close-icon' onClick={closeSidebar}><BsXLg/></div>
             </div>
             <div className='cart-product-item-list'>
                 {
