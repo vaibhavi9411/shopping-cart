@@ -58,3 +58,4 @@ This component is created when user clicks on the hamburger card.
 It shows list of selectedProduct with options to add and remove.
 Total is calculated at the bottom using calculateTotal method. 
 User can add quantity of the hamburger and also remove it.
+# shopping-cart
