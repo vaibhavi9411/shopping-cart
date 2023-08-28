@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+#### Project Name:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shopping Cart 
 
-## Available Scripts
+A webpage used to order form list of hamburgers based on price, built with React, JavaScript, HTML and CSS.
 
-In the project directory, you can run:
+## Project Status
+1. Implemented Add To Cart Feature
+2. Collapsible Sidebar 
+3. Responsive
+4. Populated data from ProductData.json
 
-### `npm start`
+## Installation and Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Example:  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
-### `npm test`
+Installation:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`  
 
-### `npm run build`
+To Run Test Suite:  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm test`  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To Start Server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start`  
 
-### `npm run eject`
+To Visit App:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`localhost:3000`  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Example:  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This was a 46 hour project built with multiple components in React and familiarizing myself with documentation for new features.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I started this process by using the `create-react-app` boilerplate.  
 
-## Learn More
+The Project is divided into four major components 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Sidebar
+This component is a collapsible sidebar which includes list of menus having arrow at top to hide/show the sidebar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Topbar
+This component is placed at the top of the page with two more components 
+1. searchbar - A component showing input with icons 
+2. iconText - A component showing icon with text with different classes to show border,background
 
-### Code Splitting
+## Products
+This component is below the topbar.
+It has predefined ProductData.json (having list of hamburgers with price & image ) which gets populated in a card format on import. 
+User can click on the hamburger card to add it to the cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Cart-Sidebar
+This component is created when user clicks on the hamburger card. 
+It shows list of selectedProduct with options to add and remove.
+Total is calculated at the bottom using calculateTotal method. 
+User can add quantity of the hamburger and also remove it.
