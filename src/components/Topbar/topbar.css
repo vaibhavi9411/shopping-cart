@@ -1,0 +1,28 @@
+.topbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+
+/* MOBILE CSS */
+@media only screen and (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .shortcut-icons-list {
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .name{
+        display: none;
+    }
+    .search input{
+        width: 285px;
+    }
+    .filterIcon {
+        right: 30px;
+    }
+}

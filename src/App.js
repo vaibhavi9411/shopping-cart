@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { useEffect } from 'react';
+import Sidebar from './components/Sidebar/sidebar';
+import Topbar from './components/Topbar/topbar';
+import Products from './components/Products/products';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section className='products-kart-dashboard'>
+        <Sidebar />
+        <section className='w100'>
+          <Topbar />
+          <Products />
+        </section>
+      </section>
     </div>
-  );
+  )
 }
 
 export default App;
